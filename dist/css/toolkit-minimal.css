@@ -3,6 +3,9 @@ body {
   font-weight: 300;
   color: black; }
 
+p, li {
+  font-size: 1.25rem; }
+
 .navbar {
   background-color: rgba(255, 255, 255, 0.9); }
 
@@ -9049,7 +9052,8 @@ h1.block-title {
 
 #main-block {
   background-image: url("../img/back_1.jpg");
-  background-position: center; }
+  background-position: center;
+  height: 400px; }
 
 #main-text {
   font-size: 1.875rem;
