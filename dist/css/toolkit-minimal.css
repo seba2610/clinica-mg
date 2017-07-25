@@ -9050,14 +9050,26 @@ h1.block-title {
     background-color: transparent;
     text-decoration: underline; }
 
+.navbar-toggler-right {
+  right: 0; }
+
 #main-block {
   background-image: url("../img/back_1.jpg");
   background-position: center;
+  background-size: cover;
   height: 400px; }
 
 #main-text {
   font-size: 1.875rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white; }
+
+@media (max-width: 767px) {
+  #main-text {
+    font-size: 1.25rem; }
+  p {
+    font-size: 1.25rem; }
+  .block-footer ul li {
+    font-size: 1.05rem; } }
 
 /*# sourceMappingURL=toolkit-minimal.css.map */

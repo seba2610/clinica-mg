@@ -128,14 +128,33 @@ h1.block-title{
     }
 }
 
+.navbar-toggler-right{
+    right: 0;
+}
+
 #main-block{
     background-image: url('../img/back_1.jpg');
     background-position:center;
+    background-size: cover;
     height: 400px;
 }
 
 #main-text{
     font-size: $font-size-lg * 1.5;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     color:white;
+}
+
+@include media-breakpoint-down(sm) {
+    #main-text{
+        font-size: $font-size-lg;
+    }
+    
+    p{
+        font-size: $font-size-lg;
+    }
+    
+    .block-footer ul li{
+        font-size: $font-size-sm * 1.2;
+    }
 }
