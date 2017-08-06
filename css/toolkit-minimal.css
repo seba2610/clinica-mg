@@ -9074,6 +9074,9 @@ h1.block-title {
 #contact-form input:hover {
   border-color: #aaa; }
 
+.nav-item span {
+  cursor: default; }
+
 @media (max-width: 767px) {
   #main-text {
     font-size: 1.25rem; }
