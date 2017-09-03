@@ -7,7 +7,7 @@ p, li {
   font-size: 1.25rem; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .navbar-nav .nav-link {
   font-size: 1.225rem;
@@ -8695,8 +8695,9 @@ img.zoom-img {
   left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #000;
-  overflow: hidden; }
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  color: white;}
 
 .text-ribbon:before {
   position: absolute;
@@ -9000,6 +9001,10 @@ strong {
 h1.block-title {
   font-size: 4rem; }
 
+h3.block-title {
+  font-size: 2rem;
+line-height: 4rem;}
+
 .navbar-light .navbar-toggler {
   border-color: transparent; }
 
@@ -9055,12 +9060,6 @@ h1.block-title {
 
 .navbar-toggler-right {
   right: 0; }
-
-#main-block {
-  background-image: url("../img/back_1.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px; }
 
 #main-text {
   font-size: 1.875rem;
