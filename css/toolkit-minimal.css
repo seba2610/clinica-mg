@@ -8692,7 +8692,6 @@ img.zoom-img {
 
 .text-ribbon {
   position: relative;
-  left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgba(0,0,0,0.5);
@@ -9039,6 +9038,81 @@ line-height: 4rem;}
     color: white;
     background-image: url("../img/logo-sc.png");
     background-size: cover; }
+
+.navbar{
+    height: 111px;
+    transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+}
+
+.navbar.smaller{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar.greater {
+    max-height: 111px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        height: 76px;
+    }
+    
+    h3.block-title {
+        font-size: 1.5rem;
+        line-height: 2rem;}
+    
+    .navbar #navbarResponsive{
+        background-color: rgba(255, 255, 255, 0.8);
+}
+}
+
+#navbar-wrapper.smaller {
+    max-height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-light{
+    background-color: white;
+}
+
+#navbar-wrapper.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#navbar-wrapper.smaller #subtitle{
+    display: none;
+}
+
+#navbar-wrapper.smaller .navbar-light{
+    margin-top: -10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#navbar-wrapper .navbar-light:before{
+    border-top: none;
+}
+
+#navbar-wrapper .img-logo-expanded{
+    display:inline-block;
+}
+
+#navbar-wrapper .img-logo-shrinked{
+    display:none;
+}
+
+#navbar-wrapper.smaller .img-logo-expanded{
+    display:none;
+}
+
+#navbar-wrapper.smaller .img-logo-shrinked{
+    display:inline-block;
+}
 
 .block-footer {
   color: white; }
