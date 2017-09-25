@@ -177,19 +177,21 @@ $(function () {
 })
 
 function init() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
-            header = document.querySelector("#navbar-wrapper");
-        if (distanceY > shrinkOn) {
-            classie.add(header,"smaller");
-            classie.remove(header,"greater");
-        } else {
-            if (classie.has(header,"smaller")) {
-                classie.remove(header,"smaller");
-                classie.add(header,"greater");
+        window.addEventListener('scroll', function(e){
+        if (screen.width > 768) {
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("#navbar-wrapper");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+                classie.remove(header,"greater");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                    classie.add(header,"greater");
+                }
             }
         }
-    });
+        });
 }
 window.onload = init();
